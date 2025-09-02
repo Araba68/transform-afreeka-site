@@ -21,8 +21,26 @@ const iconMap = {
   FaHeart,
 };
 
+// Define a type for your aboutData
+type AboutData = {
+  title: string;
+  introDescription: string;
+  missionTitle: string;
+  missionText: string;
+  visionTitle: string;
+  visionText: string;
+  coreValues: Array<{ label: string; icon: string }> | string | object;
+  image: {
+    fields: {
+      file: { url: string };
+      title: string;
+    };
+  };
+  imageAltText: string;
+};
+
 export default function AboutSection() {
-  const [aboutData, setAboutData] = useState<any>(null);
+  const [aboutData, setAboutData] = useState<AboutData | null>(null);
 
   useEffect(() => {
     async function fetchAbout() {
@@ -33,7 +51,7 @@ export default function AboutSection() {
       // Replace 'about' with your actual content type ID if different
       const res = await client.getEntries({ content_type: 'about' });
       if (res.items.length > 0) {
-        setAboutData(res.items[0].fields);
+        setAboutData(res.items[0].fields as AboutData);
       }
     }
     fetchAbout();
@@ -53,7 +71,6 @@ export default function AboutSection() {
         coreValues = [];
       }
     } else if (typeof aboutData.coreValues === 'object') {
-      // If it's an object, convert to array if needed
       coreValues = Object.values(aboutData.coreValues);
     }
   }
@@ -137,6 +154,6 @@ export default function AboutSection() {
           />
         </div>
       </motion.div>
-    </section>
+      </section>
   );
 }

@@ -50,7 +50,7 @@ export default function ThematicAreasPage() {
               Advocacy is a powerful tool for delivering impact when the focus is on adolescents and young mothers. It serves
               as both a catalyst for systemic change and a means to amplify the voices of those often marginalized in the
               community. This includes community forums, public engagement events, and social media awareness campaigns.
-              Advocacy at TAF goes beyond awareness — it's about shifting power and embedding sustainable solutions into
+              Advocacy at TAF goes beyond awareness — it is about shifting power and embedding sustainable solutions into
               the systems that affect our target population.
             </p>
           </motion.section>

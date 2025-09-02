@@ -32,7 +32,7 @@ export default function VolunteerSection() {
           Your time and compassion can help us create lasting change in Mukuru and beyond.
         </p>
         <p className="text-white/80 mb-8">
-          Whether you’re a student, professional, or just passionate about youth empowerment,
+          Whether you&apos;re a student, professional, or just passionate about youth empowerment,
           we welcome your support in outreach, mentorship, training, and community development.
         </p>
 

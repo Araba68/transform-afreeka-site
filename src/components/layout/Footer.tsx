@@ -38,9 +38,11 @@ export default function ContactSection() {
       } else {
         throw new Error('Failed to submit');
       }
-    } catch (error) {
-      setStatus('error');
-    }
+   } catch (error) {
+  console.error("Form submission failed:", error);
+  setStatus('error');
+}
+
   };
 
   return (
@@ -50,7 +52,7 @@ export default function ContactSection() {
         <div>
           <h2 className="text-3xl font-bold text-brandBlack mb-4">Contact Us</h2>
           <p className="text-brandPurple mb-6">
-            Get in touch with Transform Afreeka Foundation. We’re happy to hear from you.
+            Get in touch with Transform Afreeka Foundation. We&apos;re happy to hear from you.
           </p>
 
           <div className="space-y-4 text-sm text-gray-700">

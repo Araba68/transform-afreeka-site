@@ -4,11 +4,10 @@ import React from 'react';
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
 import {
-  FaUsers,
+  
   FaFemale,
   FaBullhorn,
   FaHandshake,
-  FaHospitalUser,
   FaHandsHelping,
 } from 'react-icons/fa';
 
@@ -59,7 +58,7 @@ export default function ImpactSection() {
           Our Achievements
         </h2>
         <p className="text-lg text-brandBlack mb-12 max-w-3xl mx-auto">
-          Transform Afreeka Foundation is proud of the transformation we've fostered through mentorship programs, outreach initiatives, and strategic partnerships.
+          Transform Afreeka Foundation is proud of the transformation we have fostered through mentorship programs, outreach initiatives, and strategic partnerships.
         </p>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -21,7 +21,7 @@ const events: Event[] = [
   },
   {
     date: 'April 10, 2025',
-    title: 'Children’s Home Visit - Kayole',
+    title: 'Childrens Home Visit - Kayole',
     description:
       'Engagements with teen mothers and adolescents through guided mentorship and donations.',
   },

@@ -21,7 +21,7 @@ export default function HeroSection() {
     return () => clearInterval(interval);
   }, []);
 
-  const currentImage = images[current];
+ 
 
   return (
     <section

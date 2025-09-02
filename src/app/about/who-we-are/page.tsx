@@ -20,7 +20,7 @@ export default function WhoWeAreSection() {
         <div className="mb-12">
           <h3 className="text-2xl font-bold mb-4">The Afreeka Philosophy</h3>
           <p className="mb-4">
-            "Afreeka" is an acronym of the fundamental principles that define our philosophy when dealing with clients,
+            &quot;Afreeka&quot; is an acronym of the fundamental principles that define our philosophy when dealing with clients,
             members, and the community. It symbolizes our vision of impacting teenage and young mothers across Africa.
           </p>
 
