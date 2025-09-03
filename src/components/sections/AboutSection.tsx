@@ -21,22 +21,22 @@ const iconMap = {
   FaHeart,
 };
 
-// Define a type for your aboutData
+// All fields optional for flexibility
 type AboutData = {
-  title: string;
-  introDescription: string;
-  missionTitle: string;
-  missionText: string;
-  visionTitle: string;
-  visionText: string;
-  coreValues: Array<{ label: string; icon: string }> | string | object;
-  image: {
-    fields: {
-      file: { url: string };
-      title: string;
+  title?: string;
+  introDescription?: string;
+  missionTitle?: string;
+  missionText?: string;
+  visionTitle?: string;
+  visionText?: string;
+  coreValues?: Array<{ label: string; icon: string }> | string | object;
+  image?: {
+    fields?: {
+      file?: { url?: string };
+      title?: string;
     };
   };
-  imageAltText: string;
+  imageAltText?: string;
 };
 
 export default function AboutSection() {
@@ -48,7 +48,6 @@ export default function AboutSection() {
         space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID!,
         accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN!,
       });
-      // Replace 'about' with your actual content type ID if different
       const res = await client.getEntries({ content_type: 'about' });
       if (res.items.length > 0) {
         setAboutData(res.items[0].fields as AboutData);
@@ -154,6 +153,6 @@ export default function AboutSection() {
           />
         </div>
       </motion.div>
-      </section>
+    </section>
   );
 }
